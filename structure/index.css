@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+  }
+  /* структура */
+  .header {
+    background-color: rgb(185,122,87);
+    text-align: right;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #bdbcbc, 0 0 5px #1f0404;
+    font-family: 'Brush Script MT', cursive;
+    padding: 10px;
+  }
+
+  .footer {
+    color: rgb(92,20,22);
+    font-family:'Lucida Handwriting', cursive;
+    font-size:20 px;
+    font-weight:normal;
+    padding-left:7vw;
+  }
+
+  .login_phrase {
+    color:white;
+   }
+
+  /* заголовки */
+  .caption {
+    color:rgb(106,56,58);
+    font-size:25px;
+    padding-top:15px;
+    padding-left:20px;
+    font-family:'Brush Script MT', cursive; 
+    }
+
+/* навигация короткая */
+
+  .flex_container {
+    font-size: 30px;
+    color:white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #bdbcbc, 0 0 5px #1f0404;
+    font-family: 'Brush Script MT', cursive;
+    display:none;
+  }
+
+  .flex_item_left {
+    background-color:  rgb(56, 26, 33);
+    padding: 10px;
+    text-align: center;
+    width: 13%;
+    float:left;
+    display:none;
+    text-shadow:none;
+  }
+
+  .flex_item_right {
+    background-color: rgb(56, 26, 33);
+    padding: 10px;
+    padding-left: 5%;
+    width: 87%;
+    float:left;
+    display:none;
+    font-size: 20px;
+  }
+
+  .flex_item_left:hover {
+    color: rgb(74, 34, 43);
+  }
+
+  .submenu {
+    flex-direction: column;
+    position: absolute;
+    display:none;
+    font-size: 16px;
+    }
+
+    li:hover >.submenu {
+      display:flex;
+    }
+ 
+@media (max-width: 900px) {
+  .flex_container, .flex_item_left, .flex_item_right {
+    display:flex;
+  }
+}
+  /*навигация длинная*/
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(56, 26, 33);
+    display:block;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    display:block;
+  }
+  
+  li a:hover {
+    background-color: rgb(74, 34, 43);
+  }
+
+  @media (max-width: 900px) {
+    nav {
+      display:none;
+    }
+  }
+  table {
+    width: 100%;
+  }
+
+   .article {
+    /*background-color:rgb(185,122,87);*/
+    border-radius: 20px;
+    border-color:rgb(185,122,87);;
+    border-style: ridge;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .article_text {
+    font-size: 16px;
+    color: rgb(92,20,22);
+    font-family:'Brush Script MT', cursive; 
+    margin-top: 10px;
+    text-align:justify;
+  }
+
+  .article_title {
+    font-size: 20px;
+    color: rgb(92,20,22);
+    font-family:'Lucida Handwriting', cursive;
+    margin-top: 10px;
+    text-align:justify;
+  }
+
+  .feedback {
+    background-color:rgb(185,122,87);
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-family:'Lucida Handwriting', cursive; 
+    text-align:left;
+  }
+
+  .feedback_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 40px 30px;
+    justify-content: center;
+  }
+
+/* картинки работ */
+  .pictures {
+    float: left;
+    width: 33.3%;
+  }
+
+  @media screen and (max-width: 900px) {
+    .pictures {
+      width: 100%;
+      display:grid;
+      justify-content: center;
+    }
+  }
+
+  /* изделия */
+  .item {
+    background-color:rgb(185,122,87);
+    width: 240px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+  }
+  .item_img {
+    border-radius:11px;
+  }
+  .item_text {
+    font-size: 16px;
+    font-weight: 300;
+    font-family:'Brush Script MT', cursive; 
+    margin-top: 16px;
+    text-align: center;
+  }
+  .item_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    gap: 40px 30px;
+    justify-content: center;
+  }
+/* карта сайта */
+.menu_title {
+  color:rgb(106,56,58);
+  font-size: 20px;
+  margin: 30px;
+  font-family:'Brush Script MT', cursive; 
+}
+
+body{
+    background-color : rgb(187,149,126);
+  }
+
+  @media screen and (max-width: 900px) {
+    .text {
+      column-count: 1;
+      width: 100%; 
+   }
+  }
